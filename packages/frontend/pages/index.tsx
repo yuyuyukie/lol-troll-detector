@@ -32,7 +32,7 @@ export default memo<InferGetServerSidePropsType<typeof getServerSideProps>>(({ i
           min-height: 100vh;
         `}
       >
-        <Header as="h1">Nest Next TODO Sample</Header>
+        <Header.Content as="h1">Nest Next TODO Sample</Header.Content>
         <TaskList tasksData={tasksData} refetchTasks={refetch} />
       </Container>
     </div>
