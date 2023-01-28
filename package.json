@@ -18,7 +18,11 @@
   },
   "devDependencies": {
     "@emotion/eslint-plugin": "11.7.0",
+    "@nrwl/nx-cloud": "latest",
+    "@types/eslint": "8.4.10",
+    "@types/eslint-plugin-prettier": "3.1.0",
     "@types/node": "^18",
+    "@types/prettier": "2.7.2",
     "@typescript-eslint/eslint-plugin": "4.33.0",
     "@typescript-eslint/parser": "4.33.0",
     "eslint": "7.32.0",
@@ -32,11 +36,10 @@
     "eslint-plugin-react-hooks": "4.3.0",
     "husky": "6.0.0",
     "lint-staged": "11.2.6",
+    "nx": "15.6.3",
     "prettier": "2.5.0",
     "ts-node": "10.4.0",
-    "typescript": "4.5.2",
-    "nx": "15.6.3",
-    "@nrwl/nx-cloud": "latest"
+    "typescript": "^4.9.4"
   },
   "lint-staged": {
     "packages/**/*.{ts,tsx}": [

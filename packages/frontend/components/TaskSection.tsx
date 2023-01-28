@@ -19,7 +19,7 @@ export const TaskSection = memo<{
   const { id, title, taskContents, taskCategoryRelation } = task;
 
   return (
-    <Segment
+    <Segment.Group
       key={id}
       css={css`
         &&& {
@@ -35,7 +35,7 @@ export const TaskSection = memo<{
         `}
       >
         <div>
-          <Header
+          <Header.Content
             as="h2"
             css={css`
               &&& {
@@ -44,7 +44,7 @@ export const TaskSection = memo<{
             `}
           >
             {title}
-          </Header>
+          </Header.Content>
           <div
             css={css`
               display: flex;
@@ -138,6 +138,6 @@ export const TaskSection = memo<{
           </div>
         )}
       </div>
-    </Segment>
+    </Segment.Group>
   );
 });

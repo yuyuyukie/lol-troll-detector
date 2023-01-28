@@ -2,15 +2,14 @@
   "ignorePatterns": ["node_modules", ".next", "dist"],
   "extends": [
     "eslint:recommended",
-    "plugin:react/recommended",
-    "plugin:react-hooks/recommended",
+    "next/core-web-vitals",
     "plugin:@typescript-eslint/recommended",
     "plugin:prettier/recommended",
     "plugin:import/errors",
     "plugin:import/warnings",
     "plugin:import/typescript"
   ],
-  "plugins": ["react", "react-hooks", "@typescript-eslint", "prettier", "@emotion"],
+  "plugins": ["@emotion"],
   "env": {
     "node": true,
     "browser": true,
@@ -57,6 +56,9 @@
       "typescript": {
         "project": "packages/*/tsconfig.json"
       }
+    },
+    "next": {
+      "rootDir": "packages/frontend/"
     }
   }
 }

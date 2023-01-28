@@ -27,7 +27,7 @@ export const CategoryModal = memo<{
             padding-bottom: 120px;
           `}
         >
-          <Table
+          <Table.Body
             striped
             unstackable
             css={css`
@@ -90,7 +90,7 @@ export const CategoryModal = memo<{
                 </Table.Row>
               )}
             </Table.Body>
-          </Table>
+          </Table.Body>
         </div>
       </Modal.Content>
       <Modal.Actions>
