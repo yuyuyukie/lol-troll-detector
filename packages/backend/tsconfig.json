@@ -2,9 +2,7 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@/*": [
-        "src/*"
-      ]
+      "@/*": ["src/*"]
     },
     "module": "commonjs",
     "declaration": true,
@@ -16,9 +14,7 @@
     "sourceMap": true,
     "outDir": "./dist",
     "incremental": true,
-    "strict": true
-  },
-  "exclude": [
-    "node_modules"
-  ]
+    "strict": true,
+    "skipLibCheck": true
+  }
 }
