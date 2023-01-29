@@ -1,0 +1,12 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="frontend:type-check" type="js.build_tools.nx">
+    <node-interpreter value="wsl://Ubuntu-20.04@/home/dev/.nvm/versions/node/v18.13.0/bin/node" />
+    <nxfile value="$PROJECT_DIR$/nx.json" />
+    <tasks>
+      <task value="frontend:type-check" />
+    </tasks>
+    <package-manager value="\\wsl$\Ubuntu-20.04\usr\local\bin\yarnpkg" />
+    <envs />
+    <method v="2" />
+  </configuration>
+</component>
