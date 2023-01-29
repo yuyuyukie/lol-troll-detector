@@ -5,6 +5,7 @@
   "scripts": {
     "postinstall": "yarn prisma generate",
     "prebuild": "rimraf dist",
+    "lint": "eslint . --fix",
     "build": "nest build",
     "start": "nest start",
     "start:dev": "nest start --watch",
