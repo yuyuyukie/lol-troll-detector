@@ -5,21 +5,15 @@ import { InferGetServerSidePropsType } from "next";
 import Head from "next/head";
 import { Container, Header } from "semantic-ui-react";
 
-import { TaskList } from "@/components/TaskList";
-import { client } from "@/graphql/client";
-import { TasksDocument, TasksQuery, TasksQueryVariables, useTasksQuery } from "@/graphql/generated";
-
-export const getServerSideProps = async () => {
-  const { data } = await client.query<TasksQuery, TasksQueryVariables>({
-    query: TasksDocument,
-  });
-  return { props: { initialData: data } };
+export const getServerSideProps = async (): Promise<{ props: { data: string } }> => {
+  return {
+    props: {
+      data: "hello",
+    },
+  };
 };
 
-export default memo<InferGetServerSidePropsType<typeof getServerSideProps>>(({ initialData }) => {
-  const { data, refetch } = useTasksQuery();
-  const tasksData = data ? data.tasks : initialData.tasks;
-
+export default memo<InferGetServerSidePropsType<typeof getServerSideProps>>(() => {
   return (
     <div>
       <Head>
@@ -33,7 +27,6 @@ export default memo<InferGetServerSidePropsType<typeof getServerSideProps>>(({ i
         `}
       >
         <Header.Content as="h1">Nest Next TODO Sample</Header.Content>
-        <TaskList tasksData={tasksData} refetchTasks={refetch} />
       </Container>
     </div>
   );

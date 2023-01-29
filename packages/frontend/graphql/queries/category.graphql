@@ -1,9 +1,0 @@
-query categories {
-  categories {
-    id
-    name
-    color
-    createdAt
-    updatedAt
-  }
-}

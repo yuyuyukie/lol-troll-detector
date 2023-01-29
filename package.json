@@ -13,8 +13,7 @@
     "frontend": "yarn workspace frontend",
     "lint": "eslint .",
     "lint:backend": "eslint ./packages/backend",
-    "lint:frontend": "eslint ./packages/frontend",
-    "codegen": "yarn frontend codegen && yarn eslint ./packages/frontend/graphql --fix"
+    "lint:frontend": "eslint ./packages/frontend"
   },
   "devDependencies": {
     "@emotion/eslint-plugin": "11.10.0",
