@@ -13,7 +13,7 @@ export const getServerSideProps = async () => {
   const { data } = await client.query<TasksQuery, TasksQueryVariables>({
     query: TasksDocument,
   });
-  return { props: { initialData: data } };
+  return { props: { initiaData: data } };
 };
 
 export default memo<InferGetServerSidePropsType<typeof getServerSideProps>>(({ initialData }) => {
