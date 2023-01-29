@@ -5,4 +5,7 @@ module.exports = {
   publicRuntimeConfig: {
     APOLLO_URI: process.env.PUBLIC_APOLLO_URI,
   },
+  compiler: {
+    emotion: true,
+  },
 };
